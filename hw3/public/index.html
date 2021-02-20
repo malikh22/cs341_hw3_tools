@@ -1,0 +1,81 @@
+<!-- cheesecake.html
+Author: Hera Malik 
+Version: Feb 2021
+A website that contains a form for ordering cheesecake.
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- the stylesheet for this page -->
+	<link rel="stylesheet" href="stylesheets/cheese.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>  </script>
+	</head>
+	<body>
+		<!-- the title -->
+		<h1>Cheesecake Order Form</h1>
+			<!-- the image at the given URL -->
+			<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" style="width:150px;height:150px;">
+		<p3>
+		<!-- the headings for the two fields -->
+			Quantity                   Topping
+		</p3>
+		<!-- the dropdown menu and options -->
+		<select name="quantity" id="quantity">
+  			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option>
+  			<option value="a lot">A Lot</option>
+		</select> 
+
+		<!-- the radio buttons for the toppings -->
+		<input type="radio" id="plain" name="topping" value="plain">
+		<label for="plain">Plain</label><br>
+		&emsp;&emsp;&emsp;&ensp;&nbsp;<input type="radio" id="strawberry" name="topping" value="strawberry">
+		<label for="strawberry">Strawberry</label><br>
+		&emsp;&emsp;&emsp;&ensp;&nbsp;<input type="radio" id="other" name="topping" value="chocolate">
+		<label for="chocolate">Chocolate</label>
+		<p>
+		
+			<h2>
+				Notes:
+			</h2><br>
+			<!-- a text field for the user -->
+			<textarea  id="notes" name="notes" rows="4" cols="50">
+			Enter any special instructions here.
+			</textarea>
+		</p>
+		<!-- the order button -->
+		<button type="button">
+			Order
+		</button>
+		<script src="javascripts/vegan.js"></script>
+
+		<h3>
+			Total Orders Last <ul><li>
+            		<a href="#">Jan</a>
+            		<ul class="dropdown">
+               		 	<li><a href="#">Feb</a></li>
+                		<li><a href="#">Mar</a></li>
+                		<li><a href="#">Apr</a></li>
+				<li><a href="#">Jun</a></li>
+                		<li><a href="#">Jul</a></li>
+                		<li><a href="#">Aug</a></li>
+				<li><a href="#">Sep</a></li>
+                		<li><a href="#">Oct</a></li>
+                		<li><a href="#">Nov</a></li>
+				<li><a href="#">Dec</a></li>
+            			</ul>
+    			</ul>
+		</h3>
+
+		<!-- the list of what was ordered last month -->
+		<ul>
+  			<li>11 strawberry</li>
+  			<li>17 chocolate</li>
+  			<li>31 plain</li>
+		</ul> 
+
+	</body>
+</html>

@@ -1,0 +1,212 @@
+/*cheese.css
+* Author: Hera Malik
+* Version: February 2021
+* The stylesheet for the cheesecake order form page.
+*/
+
+/*adds the strawberry background pattern*/
+body {
+  background-image: url("berry.png");
+}
+
+
+/*the title of the page*/
+h1 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: "Lucida Handwriting", fantasy, monospace;
+  background-color: lightpink;
+  color: darkred;
+}
+
+
+/*the cheesecake image. we give it a rounded frame.*/
+img {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+
+}
+
+h2 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Optima, sans-serif, monospace;
+  color: red;
+  background-color: pink;
+
+}
+
+
+/*the subheading about last month's sales*/
+h3 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Optima, sans-serif, monospace;
+  color: red;
+  background-color: pink;
+
+}
+
+/*the radio buttons*/
+input[type="radio"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
+}
+
+/*the dropdown menu*/
+select {
+ 
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: 55%
+  width: 5%;
+
+}
+
+
+/*the labels (in this case, we only have these for the radio buttons*/
+label {
+
+  font-family: Optima, sans-serif, monospace;
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
+}
+
+/*our other text, not including "Notes:"*/
+p {
+
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Optima, sans-serif, monospace;
+  color: brown;
+  background-color: pink;
+  word-spacing: 250px;
+
+}
+
+/*the notes heading*/
+p1 {
+  
+  font-family: Optima, sans-serif, monospace;
+  color: brown;
+  background-color: pink;
+  margin-left: 5px;
+
+}
+
+
+p3 {
+
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-family: Optima, sans-serif, monospace;
+  color: brown;
+  background-color: pink;
+  word-spacing: 250px;
+
+}
+
+
+/*the text area where the user can type*/
+textarea {
+
+  font-family: Optima, sans-serif, monospace;
+  width: 50%
+  text-align: left;
+
+}
+
+
+/*the bullet pointed list*/
+ul {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  font-family: Optima, sans-serif, monospace;
+  color: brown;
+  background-color: pink;
+
+}
+
+
+/*the order button*/
+button {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  font-family: Optima, sans-serif, monospace;
+  color: brown;
+  text-align: center;
+
+}
+
+/*below from: https://w3schoolsrus.github.io/howto/howto_css_dropdown.html*/
+
+ul li {
+	display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+}
+
+ul li a {
+	display: block;
+    	padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+}
+    
+ul li a:hover {
+        color: #fff;
+        background: #939393;
+}
+    
+ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+}
+   
+ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+        display: block;
+}
+
