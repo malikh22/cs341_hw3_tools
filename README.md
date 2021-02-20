@@ -1,2 +1,2 @@
 # cs341_hw3_tools
-nice
+this is my hw3
